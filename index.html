@@ -43,11 +43,78 @@
     <li><a href="https://clojure.org/about/clojurescript">ClojureScript</a></li>
     <li><a href="http://elm-lang.org">Elm</a></li>
     <li><a href="https://www.dartlang.org">Dart</a></li>
-    <ll><a href="https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js">...List of languages that compile to JS</a></ll>
+    <ll><a
+        href="https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js">...List of languages that compile to JS</a>
+    </ll>
   </ul>
 
 </section>
 <!-- TOC-anti (end) -->
+
+<!-- what we want? (begin) -->
+<section class="slide">
+  <h2 class="shout">Что мы хотим?</h2>
+</section>
+<!-- what we want? (end) -->
+
+<!-- button great code (begin) -->
+<section class="slide">
+  <img src="pictures/foto_knopka_33.jpg" width="1280px" alt="" class="cover">
+  <h2 class="shout" style="color: white;">Идеальный код</h2>
+</section>
+<!-- button great code (end) -->
+
+
+<!-- criteria (begin) -->
+<section class="slide">
+  <h2>Идеальный код:</h2>
+  <ul>
+    <li>Легко читается</li>
+    <li class="next">Хорошо расширяется</li>
+    <li class="next">Прекрасно поддерживается</li>
+    <li class="next">Быстр</li>
+    <li class="next">Работает без ошибок</li>
+  </ul>
+</section>
+<!-- criteria (end) -->
+
+
+<!--  problem (begin) -->
+<section class="slide">
+  <h2 class="shout">Что не так в JS?</h2>
+</section>
+<!--  problem (end) -->
+
+<section class="slide">
+  <h2 class="shout">Динамическая типизация?!</h2>
+  <code>
+    let name = 'Alex';
+
+    name = 42;
+    // Error? Не думаю.
+  </code>
+</section>
+
+<section class="slide">
+  <h2>Динамическая типизация?!</h2>
+  <pre><code>
+    let name =  <mark>'Alex'</mark>;
+    name =  <mark>42</mark>;
+    name = <mark>{ first: 'Alex', second: 'Baumgertner' }</mark>;
+    name = <mark>(person) => person.first;</mark>
+
+    <span class="comment">// Error? Не думаю.<span>
+  </code></pre>
+</section>
+
+<!-- is not a function (begin) -->
+<section class="slide">
+  <h2>"name" is not a function</h2>
+  <pre><code>
+    <mark class="important">name({ first: 'Alex', second: 'Baumgertner' });</mark>
+  </code></pre>
+</section>
+<!-- is not a function (end) -->
 
 <p class="badge">
   <a href="https://github.com/easy-deep-learning/types-sugar-in-javascript">Fork me on GitHub</a>
