@@ -113,7 +113,33 @@
 </section>
 <!-- is not a function (end) -->
 
-<!-- как называть перменные (begin) -->
+
+
+<!--  (begin) -->
+<section class="slide">
+  <h2 class="shout">Как исправить?</h2>
+</section>
+<!--  (end) -->
+
+<!-- Пример на ts (begin) -->
+<section class="slide">
+
+  <h2>Пример на ts</h2>
+  <pre><code>
+    let lol : <mark>string</mark> = 'Alex';
+    let bar: <mark>number</mark> = 37;
+    let baz : <mark>Person</mark> = {firstName: 'Alex'};
+    let foo = (person) : <mark>string</mark> => person.firstName;
+
+    class Person {}
+    interface Person {}
+
+    <mark class="important">Compile time error: `foo` is not a function</mark>
+  </code></pre>
+</section>
+<!-- Пример на ts (end) -->
+
+
 <section class="slide">
 
   <h2>Как исправить?</h2>
@@ -125,23 +151,15 @@
     <img src="pictures/g-petrov-how-to-name-variables.png" style="width:100%" alt="">
   </p>
 </section>
-<!-- как называть перменные (end) -->
 
-<!-- Пример на ts (begin) -->
+
+<!-- Пример на js (begin) -->
 <section class="slide">
 
-  <h2>Пример на ts</h2>
-  <pre><code>
-    let name : <mark>string</mark> = 'Alex';
-    let age: <mark>number</mark> = 37;
-    let presenter : <mark>Person</mark> = {firstName: 'Alex'};
-    let getPresenterName = (person) => person.firstName;
-
-    class Person {}
-    interface Person {}
-  </code></pre>
+  <h2>Как исправить?</h2>
+  <img src="pictures/person_jsdoc.png" alt="">
 </section>
-<!-- Пример на ts (end) -->
+<!-- Пример на js (end) -->
 
 <p class="badge">
   <a href="https://github.com/easy-deep-learning/types-sugar-in-javascript">Fork me on GitHub</a>
