@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body class="shower list">
 <header class="caption">
@@ -87,12 +88,6 @@
 
 <section class="slide">
   <h2 class="shout">Динамическая типизация?!</h2>
-  <code>
-    let name = 'Alex';
-
-    name = 42;
-    // Error? Не думаю.
-  </code>
 </section>
 
 <section class="slide">
@@ -111,10 +106,42 @@
 <section class="slide">
   <h2>"name" is not a function</h2>
   <pre><code>
-    <mark class="important">name({ first: 'Alex', second: 'Baumgertner' });</mark>
+    let myName = name({ first: 'Alex'});
+
+    <mark class="important">Uncaught TypeError: name is not a function</mark>
   </code></pre>
 </section>
 <!-- is not a function (end) -->
+
+<!-- как называть перменные (begin) -->
+<section class="slide">
+
+  <h2>Как исправить?</h2>
+
+  <p>
+    <a href="https://www.youtube.com/watch?v=z5WkDQVeYU4">
+      Как называть переменные / Григорий Петров [Python Meetup 27.06.2015]
+    </a>
+    <img src="pictures/g-petrov-how-to-name-variables.png" style="width:100%" alt="">
+  </p>
+</section>
+<!-- как называть перменные (end) -->
+
+<!-- Пример на ts (begin) -->
+<section class="slide">
+
+  <h2>Пример на ts</h2>
+  <pre><code>
+    let name : <mark>string</mark> = 'Alex';
+    let age: <mark>number</mark> = 37;
+    let presenter : <mark>Person</mark> = {firstName: 'Alex'};
+    let getPresenterName = (person) => person.firstName;
+
+    class Person {}
+    interface Person {}
+  </code></pre>
+</section>
+<!-- Пример на ts (end) -->
 
 <p class="badge">
   <a href="https://github.com/easy-deep-learning/types-sugar-in-javascript">Fork me on GitHub</a>
