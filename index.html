@@ -87,6 +87,28 @@
 <!--  problem (end) -->
 
 <section class="slide">
+  <h2 class="shout">var? <br> Уже давно <br> let, const</h2>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Class? Уже :)</h2>
+</section>
+
+<section class="slide">
+  <h2 class="shout">В JS нет классов.</h2>
+  <p>- объекты расширяются в run-time</p>
+  <p>- для создания объекта достаточно литерала {}</p>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Interfaces? Abstract Classes?</h2>
+</section>
+
+<section class="slide">
+  <h2 class="shout shrink">Не думаю.</h2>
+</section>
+
+<section class="slide">
   <h2 class="shout">Динамическая типизация?!</h2>
 </section>
 
@@ -119,8 +141,7 @@
     let baz : <mark>Person</mark> = {firstName: 'Alex'};
     let foo = (person: <mark>Foo</mark>) : <mark>string</mark> => person.firstName;
 
-    class Foo {}
-    interface Person {}
+    class Foo {} или interface Person {}
 
     <mark class="important">Compile time error: `foo` is not a function</mark>
   </code></pre>
@@ -136,7 +157,6 @@
     <a href="https://www.youtube.com/watch?v=z5WkDQVeYU4">
       Как называть переменные / Григорий Петров [Python Meetup 27.06.2015]
     </a>
-    <img src="pictures/g-petrov-how-to-name-variables.png" style="width:100%" alt="">
   </p>
 </section>
 
@@ -155,13 +175,11 @@
   <h2>Итого</h2>
 
   <ul>
-    <li>Наименование сущностей</li>
-    <li>Простой код</li>
-    <li>jsdoc</li>
-    <li>eslint</li>
+    <li>Имена переменных</li>
+    <li>Документация jsdoc</li>
+    <li>Проверка стиля кодирования eslint</li>
     <li>ES2017+</li>
-    <li><a href="https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c#.5fgztcr9d">The Ducks File Structure for Redux</a></li>
-    <li>Тесты</li>
+    <li>Тесты :)</li>
     <li>?</li>
   </ul>
 </section>
@@ -173,13 +191,14 @@
   <h2>Материалы для чтения</h2>
   <ul>
     <li>
-      <a href="https://github.com/erikras/ducks-modular-redux">
-        Ducks: Redux Reducer Bundles
-      </a> and
-      <a href="https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c#.5fgztcr9d">The Ducks File Structure for Redux</a>
+      <a href="https://github.com/sirisian/ecmascript-types">
+        ES8 Proposal: Optional Static Typing
+      </a>
     </li>
     <li>
-      <a href="https://github.com/sirisian/ecmascript-types">ES8 Proposal: Optional Static Typing</a>
+      <a href="http://usejsdoc.org/index.html">
+        @use JSDoc
+      </a>
     </li>
     <li>
       <a href="http://2ality.com/2014/10/typed-javascript.html">
@@ -187,20 +206,31 @@
       </a>
     </li>
     <li>
-      <a href="https://medium.freecodecamp.com/why-use-static-types-in-javascript-part-1-8382da1e0adb#.l93n0g4ma">Why use static types in JavaScript?</a>
+      <a href="https://medium.freecodecamp.com/why-use-static-types-in-javascript-part-1-8382da1e0adb#.l93n0g4ma">
+        Why use static types in JavaScript?
+      </a>
     </li>
     <li>
-      <a href="https://medium.com/javascript-scene/you-might-not-need-typescript-or-static-types-aa7cb670a77b#.8cuqvw8mk">You Might Not Need TypeScript (or Static Types)</a>
+      <a href="https://medium.com/javascript-scene/you-might-not-need-typescript-or-static-types-aa7cb670a77b#.8cuqvw8mk">
+        You Might Not Need TypeScript (or Static Types)
+      </a>
     </li>
     <li>
-      <a href="https://flowtype.org/docs/five-simple-examples.html">Flow: Five simple examples</a>
+      <a href="https://flowtype.org/docs/five-simple-examples.html">
+        Flow: Five simple examples
+      </a>
     </li>
     <li>
-      <a href="http://www.typescriptlang.org/docs/tutorial.html">TypeScript documentation</a>
+      <a href="http://www.typescriptlang.org/docs/tutorial.html">
+        TypeScript documentation
+      </a>
     </li>
     <li>
-      <a href="http://usejsdoc.org/index.html">
-        @use JSDoc
+      <a href="https://github.com/erikras/ducks-modular-redux">
+        Ducks: Redux Reducer Bundles
+      </a> and
+      <a href="https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c#.5fgztcr9d">
+        The Ducks File Structure for Redux
       </a>
     </li>
   </ul>
