@@ -91,29 +91,18 @@
 </section>
 
 <section class="slide">
-  <h2>Динамическая типизация?!</h2>
+  <h2>Пример "кода":</h2>
   <pre><code>
-    let name =  <mark>'Alex'</mark>;
-    name =  <mark>42</mark>;
-    name = <mark>{ first: 'Alex', second: 'Baumgertner' }</mark>;
-    name = <mark>(person) => person.first;</mark>
+    let foo = <mark>'Alex'</mark>;
+    foo = <mark>42</mark>;
+    foo = <mark>(bar) => bar.zzz;</mark>
+    foo = <mark>{ pervii: 'Alex', ftoroy: 'Baumgertner' }</mark>;
 
-    <span class="comment">// Error? Не думаю.<span>
+    foo();
+
+    <mark class="important">Uncaught TypeError: "foo" is not a function</mark>
   </code></pre>
 </section>
-
-<!-- is not a function (begin) -->
-<section class="slide">
-  <h2>"name" is not a function</h2>
-  <pre><code>
-    let myName = name({ first: 'Alex'});
-
-    <mark class="important">Uncaught TypeError: name is not a function</mark>
-  </code></pre>
-</section>
-<!-- is not a function (end) -->
-
-
 
 <!--  (begin) -->
 <section class="slide">
@@ -123,15 +112,14 @@
 
 <!-- Пример на ts (begin) -->
 <section class="slide">
-
-  <h2>Пример на ts</h2>
+  <h2>Показывать ошибки на этапе <br> трансшпилега. TypeScript</h2>
   <pre><code>
     let lol : <mark>string</mark> = 'Alex';
     let bar: <mark>number</mark> = 37;
     let baz : <mark>Person</mark> = {firstName: 'Alex'};
-    let foo = (person: <mark>string</mark>) : <mark>string</mark> => person.firstName;
+    let foo = (person: <mark>Foo</mark>) : <mark>string</mark> => person.firstName;
 
-    class Person {}
+    class Foo {}
     interface Person {}
 
     <mark class="important">Compile time error: `foo` is not a function</mark>
