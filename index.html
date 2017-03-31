@@ -94,23 +94,45 @@
   <h2 class="shout">Class? Уже :)</h2>
 </section>
 
+<!-- В JS нет классов -->
 <section class="slide">
   <h2 class="shout">В JS нет классов.</h2>
   <p>- объекты расширяются в run-time</p>
   <p>- для создания объекта достаточно литерала {}</p>
 </section>
 
+<!-- douglas-crockford  -->
+<section class="slide">
+  <h2>Douglas Crockford Inheritance</h2>
+  <pre><code>
+  Object.<mark>create</mark>(prototype[, propertiesObject])
+  </code></pre>
+</section>
+<!-- douglas-crockford -->
+
+
+<!-- douglas-crockford  -->
+<section class="slide">
+  <h2>Douglas Crockford Inheritance: God Mode</h2>
+  <img src="pictures/douglas-crockford-inheritance.png" class="cover" alt="">
+  <p style="position: absolute; bottom: 9%;"><a href="https://youtu.be/rhV6hlL_wMc?t=1159">Douglas Crockford: The Better Parts</a></p>
+</section>
+<!-- douglas-crockford -->
+
 <section class="slide">
   <h2 class="shout">Interfaces? Abstract Classes?</h2>
 </section>
+
+<!-- ts demo (begin) -->
+<section class="slide">
+  <img src="pictures/tsdemo.png" class="cover">
+</section>
+<!-- ts demo (end) -->
 
 <section class="slide">
   <h2 class="shout shrink">Не думаю.</h2>
 </section>
 
-<section class="slide">
-  <h2 class="shout">Динамическая типизация?!</h2>
-</section>
 
 <section class="slide">
   <h2>Пример "кода":</h2>
@@ -150,34 +172,95 @@
 
 
 <section class="slide">
-
-  <h2>Как исправить?</h2>
-
-  <p>
-    <a href="https://www.youtube.com/watch?v=z5WkDQVeYU4">
-      Как называть переменные / Григорий Петров [Python Meetup 27.06.2015]
-    </a>
-  </p>
+  <h2 class="shout shrink">Как исправить?</h2>
 </section>
 
+
+<section class="slide">
+
+  <h2>Выбор имен</h2>
+  <p>
+    <a href="https://www.youtube.com/watch?v=z5WkDQVeYU4">
+      Video:  Как называть переменные: Григорий Петров
+    </a>
+  </p>
+
+  <p>Перераспределение сложности:</p>
+  <ul>
+    <li class="next">комменты к коммитам</li>
+    <li class="next">документация</li>
+    <li class="next">архитектура и абстрации</li>
+    <li class="next">наименования идентификаторов!</li>
+  </ul>
+</section>
+
+<!--  (begin) -->
+<section class="slide">
+  <h2 class="shout">Имя!</h2>
+</section>
+<!--  (end) -->
+
+
+<!--  (begin) -->
+<section class="slide">
+  <p>Отвечает на вопрос:</p>
+  <h2 class="shout"><strong>Что это</strong>?</h2>
+</section>
+<!--  (end) -->
+
+<!--  (begin) -->
+<section class="slide">
+  <pre><code>
+    <span class="comment">
+    /** @type {String} */
+    </span>
+    let <mark>name</mark> = <span style="color: green;">'Alex'</span>;
+  </code></pre>
+</section>
+<!--  (end) -->
+
+<!--  (begin) -->
+<section class="slide">
+  <pre><code>
+    <span class="comment">
+    /** @type {Number} */
+    </span>
+    let <mark>age</mark> =  <span style="color: blue;">37</span>;
+  </code></pre>
+</section>
+<!--  (end) -->
+
+
+<!--  (begin) -->
+<section class="slide">
+  <pre><code><span class="comment">    /**
+     * @typedef {Object} Person
+     * @property {String} firstName
+     * @property {Function} feed
+     */
+    </span>
+    let presenter = {
+      firstName: 'Alex',
+      feed: (food) => 'yummy!'
+    };
+  </code></pre>
+</section>
+<!--  (end) -->
 
 <!-- Пример на js (begin) -->
 <section class="slide">
 
-  <h2>Как исправить?</h2>
+  <h2>@use JSDoc</h2>
   <img src="pictures/person_jsdoc.png" alt="">
 </section>
 <!-- Пример на js (end) -->
 
 <!-- Итого (begin) -->
 <section class="slide">
-
-  <h2>Итого</h2>
-
+  <h2>Что еще?</h2>
   <ul>
-    <li>Имена переменных</li>
-    <li>Документация jsdoc</li>
     <li>Проверка стиля кодирования eslint</li>
+    <li></li>
     <li>ES2017+</li>
     <li>Тесты :)</li>
     <li>?</li>
