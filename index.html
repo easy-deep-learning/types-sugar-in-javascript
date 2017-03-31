@@ -74,7 +74,7 @@
     <li class="next">Хорошо расширяется</li>
     <li class="next">Прекрасно поддерживается</li>
     <li class="next">Быстр</li>
-    <li class="next">Работает без ошибок</li>
+    <li class="next" style="font-size: 2em;">Работает без ошибок :)</li>
   </ul>
 </section>
 <!-- criteria (end) -->
@@ -87,8 +87,27 @@
 <!--  problem (end) -->
 
 <section class="slide">
-  <h2 class="shout">var? <br> Уже давно <br> let, const</h2>
+
+  <h2>Область видимости переменных var?</h2>
+  <pre style="font-size:1.3em;"><code>
+{
+ <mark>let</mark> blockScopedVar = true;
+ <mark>const</mark> letPlusRedefineForbiddenVar = true;;
+}
+  </code></pre>
 </section>
+
+<section class="slide">
+  <h2 class="shout">with(), eval()?</h2>
+  <p>Не используйте evil-практики. JavaScript: The Good Parts</p>
+</section>
+
+
+<!-- good parts (begin) -->
+<section class="slide">
+  <img src="pictures/all_vs_good_parts.jpg" class="cover">
+</section>
+<!-- good parts (end) -->
 
 <section class="slide">
   <h2 class="shout">Class? Уже :)</h2>
@@ -104,8 +123,10 @@
 <!-- douglas-crockford  -->
 <section class="slide">
   <h2>Douglas Crockford Inheritance</h2>
-  <pre><code>
-  Object.<mark>create</mark>(prototype[, propertiesObject])
+  <pre style="font-size: 2em;"><code>Object.<mark>create</mark>(
+    prototype
+    [, properties]
+    )
   </code></pre>
 </section>
 <!-- douglas-crockford -->
