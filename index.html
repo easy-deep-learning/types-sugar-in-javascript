@@ -74,7 +74,7 @@
     <li class="next">Хорошо расширяется</li>
     <li class="next">Прекрасно поддерживается</li>
     <li class="next">Быстр</li>
-    <li class="next">Работает без ошибок</li>
+    <li class="next" style="font-size: 2em;">Работает без ошибок :)</li>
   </ul>
 </section>
 <!-- criteria (end) -->
@@ -87,25 +87,59 @@
 <!--  problem (end) -->
 
 <section class="slide">
-  <h2 class="shout">var? <br> Уже давно <br> let, const</h2>
+
+  <h2>Область видимости переменных var?</h2>
+  <pre style="font-size:1.3em;"><code>
+{
+ <mark>let</mark> blockScopedVar = true;
+ <mark>const</mark> letPlusRedefineForbiddenVar = true;;
+}
+  </code></pre>
 </section>
 
 <section class="slide">
-  <h2 class="shout">Class? Уже :)</h2>
+  <h2 class="shout">with(), eval()?</h2>
+  <p>Не используйте evil-практики. JavaScript: The Good Parts</p>
 </section>
+
+
+<!-- good parts (begin) -->
+<section class="slide">
+  <img src="pictures/all_vs_good_parts.jpg" class="cover">
+</section>
+<!-- good parts (end) -->
+
+<section class="slide">
+  <h2 class="shout">Class?</h2>
+</section>
+
+<!-- OOP (begin) -->
+<section class="slide">
+  <img src="pictures/taxomomy.png" class="cover">
+</section>
+<!-- OOP (end) -->
+
+<!-- OOP (begin) -->
+<section class="slide">
+  <img src="pictures/object-oriented-programming-banana.jpg" class="cover">
+</section>
+<!-- OOP (end) -->
 
 <!-- В JS нет классов -->
 <section class="slide">
   <h2 class="shout">В JS нет классов.</h2>
   <p>- объекты расширяются в run-time</p>
   <p>- для создания объекта достаточно литерала {}</p>
+  <p>ES 2015 +: <mark>Class</mark> сахар</p>
 </section>
 
 <!-- douglas-crockford  -->
 <section class="slide">
   <h2>Douglas Crockford Inheritance</h2>
-  <pre><code>
-  Object.<mark>create</mark>(prototype[, propertiesObject])
+  <pre style="font-size: 2em;"><code>Object.<mark>create</mark>(
+    prototype
+    [, properties]
+    )
   </code></pre>
 </section>
 <!-- douglas-crockford -->
@@ -118,6 +152,12 @@
   <p style="position: absolute; bottom: 9%;"><a href="https://youtu.be/rhV6hlL_wMc?t=1159">Douglas Crockford: The Better Parts</a></p>
 </section>
 <!-- douglas-crockford -->
+
+<!-- Композиция, а не наследование (begin) -->
+<section class="slide">
+  <h2 class="shout">Композиция vs наследование</h2>
+</section>
+<!-- Композиция, а не наследование (end) -->
 
 <section class="slide">
   <h2 class="shout">Interfaces? Abstract Classes?</h2>
@@ -260,9 +300,8 @@
   <h2>Что еще?</h2>
   <ul>
     <li>Проверка стиля кодирования eslint</li>
-    <li></li>
     <li>ES2017+</li>
-    <li>Тесты :)</li>
+    <li style="font-size:2em;">Тесты :)</li>
     <li>?</li>
   </ul>
 </section>
@@ -275,6 +314,33 @@
   <img src="pictures/Crockford_next_language.png" class="cover">
 </section>
 <!-- Что еще Крокфорд (end) -->
+
+
+<!-- А что еще? (begin) -->
+<section class="slide">
+  <h2>А что еще? <br> Functional programming!</h2>
+  <img src="pictures/function-jspreview.jpg" class="cover">
+</section>
+<!-- А что еще? (end) -->
+
+<!--  (begin) -->
+<section class="slide">
+  <h2 class="shout">И наконец</h2>
+</section>
+<!--  (end) -->
+
+<!-- И наконец (begin) -->
+<section class="slide">
+  <img src="pictures/1200px-MIPS_Architecture_(Pipelined).png" class="cover">
+</section>
+<!-- И наконец (end) -->
+
+
+<!-- Structuredcomputerorganization (begin) -->
+<section class="slide">
+  <img src="pictures/Structuredcomputerorganization.jpg" class="cover">
+</section>
+<!-- Structuredcomputerorganization (end) -->
 
 <!--  (begin) -->
 <section class="slide">
@@ -336,11 +402,8 @@
       </a>
     </li>
     <li>
-      <a href="https://github.com/erikras/ducks-modular-redux">
-        Ducks: Redux Reducer Bundles
-      </a> and
-      <a href="https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c#.5fgztcr9d">
-        The Ducks File Structure for Redux
+      <a href="https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53">
+        Goodbye, Object Oriented Programming
       </a>
     </li>
   </ul>
@@ -352,6 +415,19 @@
   <img src="pictures/neznayka.jpg" class="cover">
 </section>
 <!--  (end) -->
+
+<!-- Вопросы? (begin) -->
+<section class="slide">
+  <h2 class="shout">Вопросы?</h2>
+</section>
+<!-- Вопросы? (end) -->
+
+
+<!-- Спасибо! (begin) -->
+<section class="slide">
+  <h2 class="shout">Спасибо!</h2>
+</section>
+<!-- Спасибо! (end) -->
 
 <section class="slide">
   <img src="pictures/alexbaumgertner.jpg" width="300" style="float: right;" alt="alexbaumgertner">
