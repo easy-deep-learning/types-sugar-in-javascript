@@ -1,9 +1,8 @@
-export function createGenericAttributesCollection<T extends AttributesCollection<U>, U extends Attribute>(
-  collectionConstructor : { new() : T },
-  attributeConstructor : { new (name : string, attributes : Object) : U },
-  data): AttributesCollection<Attribute> {
-  return [Attribute];
-}
+class SomeThingCollection {}
+interface SomeThing {}
 
-class AttributesCollection {}
-class Attribute {}
+export function createGenericSomeThing<T extends SomeThingCollection<U>, U implements SomeThing>(
+  collectionConstructor : { new() : T },
+  thingConstructor : { new (name : string, someThing : Object) : U }, data): SomeThingCollection<SomeThing> {
+  return [SomeThing];
+}
