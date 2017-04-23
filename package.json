@@ -1,18 +1,19 @@
 {
-  "name": "shower",
+  "name": "types-sugar-in-javascript",
+  "private: true,
   "description": "Shower HTML presentation engine",
-  "version": "2.1.9",
+  "version": "1.0.0",
   "author": {
-    "name": "Vadim Makeev",
-    "url": "http://pepelsbey.net/"
+    "name": "easy-deep-learning",
+    "url": "https://easy-deep-learning.github.io"
   },
-  "homepage": "https://github.com/shower/shower",
+  "homepage": "https://github.com/easy-deep-learning/types-sugar-in-javascript",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shower/shower.git"
+    "url": "git@github.com:easy-deep-learning/types-sugar-in-javascript.git"
   },
   "bugs": {
-    "url": "http://github.com/shower/shower/issues"
+    "url": "https://github.com/easy-deep-learning/types-sugar-in-javascript/issues"
   },
   "license": "MIT",
   "keywords": [
