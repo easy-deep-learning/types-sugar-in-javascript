@@ -1,6 +1,6 @@
 {
   "name": "types-sugar-in-javascript",
-  "private: true,
+  "private": true,
   "description": "Shower HTML presentation engine",
   "version": "1.0.0",
   "author": {
